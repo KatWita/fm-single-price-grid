@@ -1,0 +1,178 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 1.6rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: black;
+}
+
+.container, footer {
+  background-color: hsl(217deg, 100%, 96%);
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5em;
+  min-height: 100vh;
+}
+
+.cards,
+.sub__btn {
+  border-radius: 6px;
+}
+
+.cards {
+  max-width: 310px;
+  box-shadow: 0px 3px 14px -4px rgb(126, 128, 141);
+  overflow: hidden;
+}
+
+.join {
+  padding: 1.7em 1.5em 2em;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(218deg, 22%, 67%);
+}
+.join__heading {
+  color: hsl(179deg, 90%, 38%);
+  font-size: 2rem;
+}
+.join__underhead {
+  margin: 1.8em 0 1em;
+  color: hsl(71deg, 73%, 54%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 20px;
+}
+.join__text {
+  font-size: 1.37rem;
+  line-height: 26px;
+}
+
+.sub__heading,
+.whyus__heading {
+  font-size: 1.8rem;
+  color: hsl(178deg, 100%, 93%);
+}
+
+.sub,
+.whyus {
+  padding: 1.5em;
+  color: hsl(179deg, 62%, 84%);
+}
+
+.sub {
+  background-color: hsl(179deg, 59%, 44%);
+}
+.sub__price-box, .sub__btn {
+  color: hsl(0deg, 0%, 100%);
+}
+.sub__price-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8em;
+  align-items: center;
+  margin: 1em 0 0.5em;
+}
+.sub__price {
+  font-size: 3.4rem;
+  font-weight: bold;
+}
+.sub__span {
+  grid-column: 2/-1;
+  color: hsl(179deg, 49%, 70%);
+  font-size: 1.6rem;
+}
+.sub__btn {
+  margin-top: 2em;
+  padding: 1em 0;
+  width: 100%;
+  background-color: hsl(71deg, 73%, 54%);
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0px 11px 13px -5px rgb(58, 131, 128);
+}
+
+.whyus {
+  background-color: hsl(179deg, 50%, 50%);
+}
+.whyus__list {
+  margin-top: 1.2em;
+  list-style: none;
+  font-size: 1.4rem;
+  line-height: 20px;
+}
+
+@media (min-width: 1300px) {
+  .container {
+    padding: 0;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    max-width: 675px;
+    background-color: white;
+  }
+  .join {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    padding: 3em 2.5em;
+  }
+  .join__heading {
+    font-size: 2.5rem;
+  }
+  .join__underhead {
+    margin: 1.3em 0 0.7em;
+    font-size: 1.9rem;
+  }
+  .join__text {
+    font-size: 1.68rem;
+  }
+  .sub,
+.whyus {
+    padding: 2.5em;
+    height: 100%;
+  }
+  .sub__heading,
+.whyus__heading {
+    font-size: 1.9rem;
+  }
+  .sub,
+.whyus {
+    grid-row: 2/3;
+  }
+  .sub {
+    grid-column: 1/2;
+  }
+  .sub__span {
+    font-size: 1.7rem;
+  }
+  .whyus {
+    grid-column: 2/2;
+  }
+  .whyus__list {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
